@@ -1,0 +1,12 @@
+{
+  "name": "cf-generator-node-project",
+  "version": "0.0.1",
+  "main": "generator.js",
+  "bin": { "generate-node-project": "bin/generate" },
+  "dependencies": {
+    "inquirer": "^0.8.0",
+    "lodash.assign": "^2.4.1",
+    "slugg": "^0.1.2",
+    "kickoff": "clocklimited/kickoff#v0.1.1"
+  }
+}
