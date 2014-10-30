@@ -9,4 +9,8 @@ function tasks(pliers) {
     require(file)(pliers)
   })
 
+  // npm scripts will error unless these tasks exist somewhere in pliers
+  pliers('go', function (done) { done() })
+  pliers('build', function (done) { done() })
+
 }
