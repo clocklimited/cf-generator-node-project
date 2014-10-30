@@ -9,14 +9,4 @@ function tasks(pliers) {
     require(file)(pliers)
   })
 
-  pliers('install', function (done) {
-    pliers.logger.warn('Implement me!')
-    done()
-  })
-
-  pliers('build', function (done) {
-    pliers.logger.warn('Implement me!')
-    done()
-  })
-
 }
