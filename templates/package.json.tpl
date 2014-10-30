@@ -8,7 +8,7 @@
   "licence": "Clock Open",
   "private": true,
   "scripts": {
-    "run": "pliers go",
+    "start": "pliers -a go",
     "lint": "jshint .",
     "checkStyle": "jscs .",
     "wrap": "npm install && rm -rf npm-shrinkwrap.json; npm prune && npm install && npm shrinkwrap && pliers cleanShrinkwrap",
