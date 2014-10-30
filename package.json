@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "main": "generator.js",
   "bin": { "generate-node-project": "bin/generate" },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:clocklimited/cf-generator-node-project.git"
+  },
   "dependencies": {
     "inquirer": "^0.8.0",
     "lodash.assign": "^2.4.1",
