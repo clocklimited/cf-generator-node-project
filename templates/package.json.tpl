@@ -1,6 +1,6 @@
 {
-  "name": "<%= projectSlug %>",
-  "description": "<%= projectDescription %>",
+  "name": "<%= platform %>",
+  "description": "<%= description %>",
   "main": "app",
   "organization": "<%= organization %>",
   "author": "<%= organization %>",

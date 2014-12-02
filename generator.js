@@ -19,22 +19,26 @@ NodeProjectGenerator.prototype = Object.create(Generator.prototype)
 NodeProjectGenerator.prototype.createConfig = function (userInput) {
   var config =
     { year: (new Date()).getFullYear()
-    , projectSlug: slugg(userInput.projectName)
+    , platform: slugg(userInput.title)
     }
   return extend({}, userInput, config)
 }
 
 NodeProjectGenerator.prototype.prompts =
-  [ { name: 'projectName'
+  [ { name: 'title'
     , message: 'Name this project'
     , validate: required
     }
-  , { name: 'projectDescription'
+  , { name: 'description'
     , message: 'Describe this project'
     , validate: required
     }
+  , { name: 'client'
+    , message: 'Enter the client short name (list available here: https://intranet.clock.co.uk/companies/index.php)'
+    , default: 'clock'
+    }
   , { name: 'organization'
-    , message: 'What is the name of the organization?'
+    , message: 'What is the name of the github/npm organization?'
     , validate: required
     , default: 'clocklimited'
     }

@@ -1,6 +1,6 @@
-# <%= projectName %>
+# <%= title %>
 
-<%= projectDescription %>
+<%= description %>
 
 ## Setup
 
