@@ -17,7 +17,9 @@ glob.sync(__dirname + '/../**/*.test.js', { cwd: __dirname + '/../' })
   .forEach(addFile)
 
 // Run the tests
-mocha.run()
+mocha.run(function (numFailures) {
+  process.exit(numFailures)
+})
 
 /*
  * Returns true if the file path does not contain 'node_modules'
