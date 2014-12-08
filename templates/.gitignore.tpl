@@ -18,6 +18,7 @@ Icon?
 
 # Node modules
 node_modules
+npm-debug.log
 
 # Istanbul Coverage
 coverage
