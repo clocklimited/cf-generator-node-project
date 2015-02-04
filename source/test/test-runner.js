@@ -39,7 +39,7 @@ function isLocal(filepath) {
  */
 function matchesPathFilter(filepath) {
   // Only run tests that match filter
-  if (process.argv[2] && filepath.indexOf(process.argv[2]) === -1) return false
+  if (process.argv[ 2 ] && filepath.indexOf(process.argv[ 2 ]) === -1) return false
   return true
 }
 
