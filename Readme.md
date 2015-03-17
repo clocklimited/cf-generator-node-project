@@ -22,7 +22,7 @@ You will be prompted for required data, then your new blank project will exist a
 
 - you want to author a node module (this is for "projects", use [cf-skeleton](https://github.com/clocklimited/cf-skeleton))
 - you need a server (use [cf-generator-http-server](https://github.com/clocklimited/cf-generator-http-server))
-- you need a site with stylus, jade or browser js (use [cf-generator-static-server](https://github.com/clocklimited/cf-generator-http-static))
+- you need a site with stylus, jade or browser js (use [cf-generator-static-server](https://github.com/clocklimited/cf-generator-static-server))
 
 ## What you get
 
