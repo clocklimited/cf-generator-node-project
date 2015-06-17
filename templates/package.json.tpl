@@ -12,10 +12,9 @@
     "lint": "jshint .",
     "checkStyle": "jscs .",
     "wrap": "npm install && rm -rf npm-shrinkwrap.json; npm prune && npm install && npm shrinkwrap && pliers cleanShrinkwrap",
-    "pretest": "npm run-script lint && npm run-script checkStyle",
+    "pretest": "pliers -a build && npm run-script lint && npm run-script checkStyle",
     "test": "istanbul cover test/test-runner.js",
-    "posttest": "istanbul check-coverage && rm -rf coverage",
-    "postinstall": "pliers -a build"
+    "posttest": "istanbul check-coverage && rm -rf coverage"
   },
   "dependencies": {
   },
