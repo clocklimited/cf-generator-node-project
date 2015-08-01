@@ -8,7 +8,7 @@
   },
   "scripts": {
     "lint": "jshint .",
-    "checkStyle": "jscs .",
+    "checkStyle": "jscs -v -r unix .",
     "pretest": "npm run-script lint && npm run-script checkStyle",
     "test": "mocha -R spec"
   },
@@ -16,15 +16,15 @@
     "generate-node-project": "bin/generate"
   },
   "dependencies": {
-    "inquirer": "^0.8.0",
-    "lodash.assign": "^2.4.1",
-    "slugg": "^0.1.2",
-    "kickoff": "clocklimited/kickoff#v0.1.3"
+    "inquirer": "^0.9.0",
+    "kickoff": "git://github.com/clocklimited/kickoff#v0.1.3",
+    "lodash.assign": "^3.2.0",
+    "slugg": "^0.1.2"
   },
   "devDependencies": {
-    "jscs": "1",
-    "jshint": "2",
-    "lodash.template": "^2.4.1",
-    "mocha": "^2.0.1"
+    "jscs": "^2.0.0",
+    "jshint": "^2.8.0",
+    "lodash.template": "^3.6.2",
+    "mocha": "^2.2.5"
   }
 }
