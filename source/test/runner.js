@@ -24,7 +24,7 @@ mocha.run(function (numFailures) {
 /*
  * Returns true if the file path does not contain 'node_modules'
  */
-function isLocal(filepath) {
+function isLocal (filepath) {
   return !/node_modules/.test(filepath)
 }
 
@@ -37,7 +37,7 @@ function isLocal(filepath) {
  *    lib/foo.test.js
  *    components/thing/lib/baz.test.js
  */
-function matchesPathFilter(filepath) {
+function matchesPathFilter (filepath) {
   // Only run tests that match filter
   if (process.argv[ 2 ] && filepath.indexOf(process.argv[ 2 ]) === -1) return false
   return true
@@ -46,7 +46,7 @@ function matchesPathFilter(filepath) {
 /*
  * Adds a test file to the mocha instance
  */
-function addFile(filepath) {
+function addFile (filepath) {
   var relativePath = './' + path.relative(__dirname, filepath)
   if (!fs.existsSync(filepath)) return console.log('Tests not found', relativePath)
   console.log('Adding tests', relativePath)

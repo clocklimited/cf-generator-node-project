@@ -1,5 +1,5 @@
 module.exports = task
 
-function task(pliers) {
+function task (pliers) {
   pliers('cleanShrinkwrap', require('pliers-clean-shrinkwrap')(pliers))
 }

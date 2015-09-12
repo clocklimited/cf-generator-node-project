@@ -20,7 +20,7 @@ npm start
 
 ## Testing
 
-There is a test runner (**test/test-runner.js**) which looks for all *.test.js
+There is a test runner (**test/runner.js**) which looks for all *.test.js
 in the projects and runs them.
 
 This can be run using:

@@ -6,11 +6,11 @@ var kickoff = require('kickoff')
   , extend = require('lodash.assign')
   , slugg = require('slugg')
 
-function required(value) {
+function required (value) {
   return !!value
 }
 
-function NodeProjectGenerator() {
+function NodeProjectGenerator () {
   Generator.call(this)
 }
 
