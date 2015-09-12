@@ -15,6 +15,7 @@ describe('package.json template', function () {
       , json = tmpl(mockSettings)
 
     assert.doesNotThrow(function () { JSON.parse(json) })
+    assert.equal(JSON.parse(json).name, 'test')
 
   })
 
