@@ -13,7 +13,7 @@
     "wrap": "npm shrinkwrap && pliers cleanShrinkwrap",
     "pretest": "pliers -a build && npm run lint",
     "test": "istanbul cover test/runner.js",
-    "posttest": "istanbul check-coverage && rm -rf coverage"
+    "posttest": "(istanbul check-coverage --statements 60 --branches 60 --functions 100 --lines 60 && rm -rf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more"
   },
   "dependencies": {
   },
