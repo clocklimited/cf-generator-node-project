@@ -12,7 +12,8 @@
     "test": "mocha -R spec"
   },
   "bin": {
-    "generate-node-project": "bin/generate"
+    "generate-node-project": "bin/generate",
+    "pull-deps": "bin/pull-deps"
   },
   "dependencies": {
     "inquirer": "^0.9.0",

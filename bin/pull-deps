@@ -1,0 +1,56 @@
+#!/usr/bin/env node
+
+var relative = require('path').relative
+  , args = process.argv.slice(2)
+  , packagePath = relative(__dirname, args.pop())
+  , packages = require(packagePath)
+  , deps = {}
+  , notFound = {}
+  , depType = args.shift()
+
+args.forEach(function (depJsonPath) {
+  depJsonPath = relative(__dirname, depJsonPath)
+  deps[depJsonPath] = require(depJsonPath)
+})
+
+// Upgrade any packages found in the deps. starting with the furthest left dep
+Object.keys(packages[depType]).forEach(function (packageDep) {
+  var found = Object.keys(deps).some(function (depPath) {
+    return Object.keys(deps[depPath]).some(function (dep) {
+      if (packageDep === dep) {
+        if (deps[depPath][dep] !== packages[depType][packageDep]) {
+          console.log('Updating %s from %s to %s in %s'
+            , dep, deps[depPath][dep], packages[depType][packageDep], depPath)
+          deps[depPath][dep] = packages[depType][packageDep]
+        }
+        return true
+      }
+    })
+  })
+  if (!found) notFound[packageDep] = packages[depType][packageDep]
+})
+
+// Dedupe deps keep left hand deps
+Object.keys(deps).forEach(function (depPath) {
+  Object.keys(deps[depPath]).forEach(function (dep) {
+    Object.keys(deps).forEach(function (secondDepPath) {
+      if (depPath === secondDepPath) return false
+      Object.keys(deps[secondDepPath]).forEach(function (secondDep) {
+        if (dep === secondDep) {
+          console.log('Removing duplicate %s from %s', secondDep, secondDepPath)
+          delete deps[secondDepPath][secondDep]
+        }
+      })
+    })
+  })
+})
+
+Object.keys(deps).forEach(function (depPath) {
+  console.log('Path', depPath)
+  console.log(JSON.stringify(deps[depPath], null, '  '))
+})
+
+if (notFound.length > 0) {
+  console.log('The following were found in %s but not in any of the dep files', packagePath)
+  console.log(JSON.stringify(notFound, null, '  '))
+}
