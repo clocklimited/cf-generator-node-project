@@ -10,20 +10,23 @@
   "scripts": {
     "start": "pliers -a go",
     "lint": "eslint -f unix .",
-    "wrap": "npm shrinkwrap && pliers cleanShrinkwrap",
-    "pretest": "pliers -a build && npm run lint",
+    "inspect": "jsinspect .",
+    "pretest": "pliers -a build && npm run lint && npm run inspect && depcheck",
     "test": "istanbul cover test/runner.js",
-    "posttest": "(istanbul check-coverage --statements 60 --branches 60 --functions 100 --lines 60 && rm -rf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more"
+    "posttest": "(istanbul check-coverage --statements 60 --branches 60 --functions 100 --lines 60 && rm -rf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more",
+    "wrap": "npm shrinkwrap && pliers cleanShrinkwrap"
   },
   "dependencies": {
   },
   "devDependencies": {
-    "eslint": "^1.4.1",
+    "depcheck": "^0.4.7",
+    "eslint": "^1.4.3",
     "eslint-config-clock": "^1.0.0",
     "eslint-config-standard": "^4.3.2",
     "eslint-plugin-standard": "^1.3.0",
     "glob": "^5.0.14",
-    "istanbul": "^0.3.17",
+    "istanbul": "^0.3.20",
+    "jsinspect": "^0.7.0",
     "mocha": "^2.3.2",
     "node-notifier": "^4.2.3",
     "pliers": "^1.2.1",
