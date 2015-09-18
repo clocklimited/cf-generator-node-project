@@ -14,6 +14,7 @@
     "pretest": "pliers -a build && npm run lint && npm run inspect && depcheck",
     "test": "istanbul cover test/runner.js",
     "posttest": "(istanbul check-coverage --statements 60 --branches 60 --functions 100 --lines 60 && rm -rf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more",
+    "prepare": "nave use 0.10.40 npm --registry http://npm.clockte.ch install && nave use 0.10.40 npm prune",
     "wrap": "npm shrinkwrap && pliers cleanShrinkwrap",
     "update-changelog": "update-changelog"
   },
