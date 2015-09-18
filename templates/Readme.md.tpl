@@ -20,13 +20,22 @@ npm start
 
 ## Testing
 
-There is a test runner (**test/runner.js**) which looks for all *.test.js
-in the projects and runs them.
+Runs all the automated QA tools and the test runner (**test/runner.js**)
+which looks for all *.test.js files in the projects and runs them.
 
 This can be run using:
 
 ```
 npm test
+```
+
+## Changelog
+
+You can create and update a markdown `changelog.md` for your project from your
+git commits using:
+
+```
+npm run update-changelog
 ```
 
 ## License
