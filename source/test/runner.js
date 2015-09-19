@@ -3,6 +3,7 @@ var Mocha = require('mocha')
   , path = require('path')
   , glob = require('glob')
   , mocha = new Mocha()
+  , filter = process.argv[2] && new RegExp(process.argv[2])
 
 mocha.timeout(3000)
 mocha.reporter('spec').ui('bdd')
@@ -38,9 +39,7 @@ function isLocal (filepath) {
  *    components/thing/lib/baz.test.js
  */
 function matchesPathFilter (filepath) {
-  // Only run tests that match filter
-  if (process.argv[ 2 ] && filepath.indexOf(process.argv[ 2 ]) === -1) return false
-  return true
+  return !(filter && !filter.test(filepath))
 }
 
 /*
