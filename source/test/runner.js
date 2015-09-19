@@ -9,9 +9,8 @@ mocha.timeout(3000)
 mocha.reporter('spec').ui('bdd')
 
 // Get the relative path (based at the project root) for all *.test.js files
-glob.sync(__dirname + '/../**/*.test.js', { cwd: __dirname + '/../' })
+glob.sync(__dirname + '/../**/*.test.js', { ignore: __dirname + '/../node_modules/**', cwd: __dirname + '/../' })
   // Filter out any that are dependencies
-  .filter(isLocal)
   // Filter out any non-matches if a path filter is passed in
   .filter(matchesPathFilter)
   // Add the tests
@@ -21,13 +20,6 @@ glob.sync(__dirname + '/../**/*.test.js', { cwd: __dirname + '/../' })
 mocha.run(function (numFailures) {
   process.exit(numFailures)
 })
-
-/*
- * Returns true if the file path does not contain 'node_modules'
- */
-function isLocal (filepath) {
-  return !/node_modules/.test(filepath)
-}
 
 /*
  * Returns true if the file path contains the path filter CLI arg
