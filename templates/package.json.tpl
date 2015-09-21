@@ -31,6 +31,7 @@
     "istanbul": "^0.3.20",
     "jsinspect": "^0.7.0",
     "mocha": "^2.3.2",
+    "mockdate": "^1.0.3",
     "node-notifier": "^4.2.3",
     "pliers": "^1.2.1",
     "pliers-clean-shrinkwrap": "^1.0.1"
