@@ -21,7 +21,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "cf-changlog": "^1.0.0",
+    "cf-changelog": "^1.0.0",
     "depcheck": "^0.4.7",
     "eslint": "^1.4.3",
     "eslint-config-clock": "^1.0.0",
