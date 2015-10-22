@@ -50,7 +50,7 @@ Object.keys(deps).forEach(function (depPath) {
   console.log(JSON.stringify(deps[depPath], null, '  '))
 })
 
-if (notFound.length > 0) {
+if (Object.keys(notFound).length > 0) {
   console.log('The following were found in %s but not in any of the dep files', packagePath)
   console.log(JSON.stringify(notFound, null, '  '))
 }
