@@ -25,7 +25,7 @@
     "cf-changelog": "^1.0.0",
     "depcheck": "^0.4.7",
     "eslint": "^2.1.0",
-    "eslint-config-clock": "^1.0.0",
+    "eslint-config-clock": "^1.0.1",
     "eslint-config-standard": "^5.1.0",
     "eslint-plugin-standard": "^1.3.1",
     "glob": "^5.0.14",
