@@ -14,7 +14,7 @@
     "depcheck": "depcheck --ignores-dirs=node_modules",
     "pretest": "pliers -a build && npm run lint",
     "test": "istanbul cover -x **/vendor/** test/runner.js",
-    "posttest": (istanbul check-coverage --statements 75 --branches 50 --functions 70 --lines 70 && rm -rf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more",
+    "posttest": "(istanbul check-coverage --statements 75 --branches 50 --functions 70 --lines 70 && rm -rf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more",
     "prepare": "nave use 4.4.3 npm --registry http://npm.clockte.ch install && nave use 4.4.3 npm prune",
     "wrap": "npm shrinkwrap && pliers cleanShrinkwrap",
     "update-changelog": "update-changelog"
