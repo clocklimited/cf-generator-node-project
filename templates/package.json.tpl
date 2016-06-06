@@ -17,6 +17,7 @@
     "posttest": "(istanbul check-coverage --statements 75 --branches 50 --functions 70 --lines 70 && rm -rf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more",
     "prepare": "nave use 4.4.3 npm --registry http://npm.clockte.ch install && nave use 4.4.3 npm prune",
     "wrap": "npm shrinkwrap && pliers cleanShrinkwrap",
+    "build": "pliers build -a",
     "update-changelog": "update-changelog"
   },
   "dependencies": {
