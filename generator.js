@@ -33,6 +33,16 @@ NodeProjectGenerator.prototype.prompts =
     , message: 'Describe this project'
     , validate: required
     }
+  , { name: 'nodeVersion'
+    , message: 'What is the minimum node.js version this project should run on?'
+    , default: '4.4.5'
+    , validate: required
+    }
+  , { name: 'npmVersion'
+    , message: 'What is the exact npm version this project should run on?'
+    , default: '2.15.2'
+    , validate: required
+    }
   , { name: 'client'
     , message: 'Enter the client short name (list available here: https://intranet.clock.co.uk/companies/index.php)'
     , default: 'clock'

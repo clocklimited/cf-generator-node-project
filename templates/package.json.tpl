@@ -7,6 +7,10 @@
   "version": "0.0.0",
   "licence": "Clock Open",
   "private": true,
+  "engines": {
+    "node": ">=<%= nodeVersion %>",
+    "npm": "=<%= npmVersion %> "
+  },
   "scripts": {
     "start": "pliers -a go",
     "lint": "eslint -f unix .",
@@ -15,7 +19,7 @@
     "pretest": "pliers -a build && npm run lint",
     "test": "istanbul cover -x **/vendor/** test/runner.js",
     "posttest": "(istanbul check-coverage --statements 75 --branches 50 --functions 70 --lines 70 && rm -rf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more",
-    "prepare": "nave use 4.4.3 npm --registry http://npm.clockte.ch install && nave use 4.4.3 npm prune",
+    "prepare": "nave use <%= nodeVersion %> npm --registry http://npm.clockte.ch install && nave use <%= nodeVersion %> npm prune",
     "wrap": "npm shrinkwrap && pliers cleanShrinkwrap",
     "build": "pliers build -a",
     "update-changelog": "update-changelog"
