@@ -35,12 +35,12 @@ NodeProjectGenerator.prototype.prompts =
     }
   , { name: 'nodeVersion'
     , message: 'What is the minimum node.js version this project should run on?'
-    , default: '4.4.5'
+    , default: '6.10.0'
     , validate: required
     }
   , { name: 'npmVersion'
     , message: 'What is the exact npm version this project should run on?'
-    , default: '2.15.2'
+    , default: '3.10.10'
     , validate: required
     }
   , { name: 'client'
@@ -55,7 +55,7 @@ NodeProjectGenerator.prototype.prompts =
   , { name: 'copyrightHolder'
     , message: 'Who is the copyright holder?'
     , validate: required
-    , default: 'Clock Ltd.'
+    , default: 'Clock Limited'
     }
   ]
 
