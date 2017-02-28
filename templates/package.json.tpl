@@ -22,7 +22,7 @@
     "test": "npm-run-all --parallel qa:*",
     "pretest": "npm run build",
     "posttest": "(istanbul check-coverage --statements 75 --branches 50 --functions 70 --lines 70 && rm -rf coverage) || echo Look at 'coverage/lcov-report/index.html' to find out more",
-    "prepare": "nave use <%= nodeVersion %> npm install && nave use <%= nodeVersion %> npm prune",
+    "prepare": "nave use <%= nodeVersion %> npm install && nave use <%= nodeVersion %> npm prune"
   },
   "dependencies": {
   },
