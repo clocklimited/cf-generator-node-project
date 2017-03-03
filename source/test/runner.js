@@ -1,15 +1,15 @@
 var Mocha = require('mocha')
-  , fs = require('fs')
-  , path = require('path')
-  , glob = require('glob')
-  , mocha = new Mocha()
-  , filter = process.argv[2] && new RegExp(process.argv[2])
+var fs = require('fs')
+var path = require('path')
+var glob = require('glob')
+var mocha = new Mocha()
+var filter = process.argv[2] && new RegExp(process.argv[2])
 
 mocha.timeout(3000)
 mocha.reporter('spec').ui('bdd')
 
 // Get the relative path (based at the project root) for all *.test.js files
-glob.sync(__dirname + '/../**/*.test.js', { ignore: __dirname + '/../node_modules/**', cwd: __dirname + '/../' })
+glob.sync(path.join(__dirname, '/../**/*.test.js'), { ignore: path.join(__dirname, '/../node_modules/**'), cwd: path.join(__dirname, '/../') })
   // Filter out any that are dependencies
   // Filter out any non-matches if a path filter is passed in
   .filter(matchesPathFilter)

@@ -28,11 +28,7 @@
   },
   "devDependencies": {
     "depcheck": "^0.6.4",
-    "eslint": "^2.13.1",
-    "eslint-config-clock": "^1.2.0",
-    "eslint-config-standard": "^5.3.5",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^1.3.3",
+    "standard": "^9.0.0",
     "glob": "^5.0.14",
     "istanbul": "^0.3.20",
     "jsinspect": "^0.7.0",
@@ -40,5 +36,11 @@
     "npm-run-all": "^2.3.0",
     "pliers": "^1.2.1",
     "pliers-clean-shrinkwrap": "^1.0.1"
+  },
+  "standard": {
+    "ignore": [
+      "**/node_modules",
+      "coverage"
+    ]
   }
 }
