@@ -24,12 +24,11 @@
   "devDependencies": {
     "lodash.template": "^3.6.2",
     "mocha": "^2.3.2",
-    "standard": "^9.0.0"
-  },
-  "standard": {
-    "ignore": [
-      "**/node_modules",
-      "coverage"
-    ]
+    "eslint": "~3.15.0",
+    "eslint-config-standard": "7.0.0",
+    "eslint-config-standard-jsx": "3.3.0",
+    "eslint-plugin-promise": "~3.4.0",
+    "eslint-plugin-react": "~6.9.0",
+    "eslint-plugin-standard": "~2.0.1"
   }
 }
