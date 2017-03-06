@@ -2,5 +2,11 @@
   "extends": "standard",
   "env": {
     "es6": false
+  },
+  "globals": {
+    "describe",
+    "it",
+    "before",
+    "after"
   }
 }

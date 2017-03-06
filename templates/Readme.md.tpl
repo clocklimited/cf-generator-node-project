@@ -20,15 +20,13 @@ npm start
 
 ## Linting
 
-Linting is done using [standard](https://github.com/feross/standard).
+Linting is done using eslint with [standard rules](https://github.com/feross/standard).
 
 To run the inter do:
 
 ```
 npm run qa:lint
 ```
-
-There are [plugins](https://github.com/feross/standard#are-there-text-editor-plugins) available for several editors.
 
 ## Testing
 
