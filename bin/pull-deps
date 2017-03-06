@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
 /*
- ../cf-generator-node-project/bin/pull-deps dependencies ../cf-generator-http-server/config/npm-deps.json ../cf-generator-static-server/config/npm-deps.json ../cf-generator-cms/config/npm-deps.json ../cf-generator-section-cms/config/npm-deps.json ../cf-generator-publishing-cms/config/npm-deps.json ../LeicesterTigers/package.json
+../cf-generator-node-project/bin/pull-deps dependencies ../cf-generator-http-server/config/npm-deps.json
+../cf-generator-static-server/config/npm-deps.json ../cf-generator-cms/config/npm-deps.json
+../cf-generator-section-cms/config/npm-deps.json ../cf-generator-publishing-cms/config/npm-deps.json
+../LeicesterTigers/package.json
 */
 var relative = require('path').relative
   , args = process.argv.slice(2)

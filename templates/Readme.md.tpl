@@ -18,6 +18,16 @@ All project processes can be started using the following:
 npm start
 ```
 
+## Linting
+
+Linting is done using eslint with [standard rules](https://github.com/feross/standard).
+
+To run the inter do:
+
+```
+npm run qa:lint
+```
+
 ## Testing
 
 Runs all the automated QA tools and the test runner (**test/runner.js**)

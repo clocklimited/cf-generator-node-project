@@ -31,4 +31,14 @@ All of the "boilerplate" to get a Clock node project set up, including:
 - our standard test setup
 - misc project files (including `LICENSE`, `package.json` and `Readme.md`)
 - pliers setup and basic pliers tasks (including `pliers cleanShrinkwrap` and `pliers npmSecurityCheck`)
-- misc dotfiles (including `.gitignore`, `.jshintrc` and `.jscsrc`)
+-- misc dotfiles (including `.gitignore`, `.jshintrc` and `.jscsrc`)
+
+## Linting
+
+Linting is done using eslint with [standard rules](https://github.com/feross/standard).
+
+To run the inter do:
+
+```
+npm run lint
+```

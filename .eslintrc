@@ -1,8 +1,7 @@
 {
-  "extends": "clock",
-
+  "extends": "standard",
   "env": {
-    "es6": false
+    "es6": false,
+    "mocha": true
   }
-
 }
