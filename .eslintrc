@@ -1,12 +1,7 @@
 {
   "extends": "standard",
   "env": {
-    "es6": false
-  },
-  "globals": {
-    "describe",
-    "it",
-    "before",
-    "after"
+    "es6": false,
+    "mocha": true
   }
 }

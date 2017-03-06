@@ -1,7 +1,7 @@
 module.exports = tasks
 
-var glob = require('glob')
-var path = require('path')
+const glob = require('glob')
+const path = require('path')
 
 function tasks (pliers) {
   // Load pliers plugins

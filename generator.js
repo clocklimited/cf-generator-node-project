@@ -1,10 +1,10 @@
 module.exports = NodeProjectGenerator
 
-var kickoff = require('kickoff')
-var Generator = kickoff.Generator
-var generate = kickoff.generate
-var extend = require('lodash.assign')
-var slugg = require('slugg')
+const kickoff = require('kickoff')
+const Generator = kickoff.Generator
+const generate = kickoff.generate
+const extend = require('lodash.assign')
+const slugg = require('slugg')
 
 function required (value) {
   return !!value
