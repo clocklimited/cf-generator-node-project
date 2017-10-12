@@ -3,7 +3,6 @@ module.exports = NodeProjectGenerator
 const kickoff = require('kickoff')
 const Generator = kickoff.Generator
 const generate = kickoff.generate
-const extend = require('lodash.assign')
 const slugg = require('slugg')
 
 function required (value) {
@@ -21,7 +20,7 @@ NodeProjectGenerator.prototype.createConfig = function (userInput) {
     { year: (new Date()).getFullYear(),
       platform: slugg(userInput.title)
     }
-  return extend({}, userInput, config)
+  return Object.assign({}, userInput, config)
 }
 
 NodeProjectGenerator.prototype.prompts =

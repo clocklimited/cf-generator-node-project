@@ -1,7 +1,3 @@
 {
-  "extends": "standard",
-  "env": {
-    "es6": false,
-    "mocha": true
-  }
+  "extends": "standard"
 }
