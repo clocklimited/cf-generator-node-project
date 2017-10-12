@@ -7,8 +7,7 @@
   "version": "0.0.0",
   "license": "ISC",
   "engines": {
-    "node": ">=<%= nodeVersion %>",
-    "npm": "=<%= npmVersion %>"
+    "node": ">=<%= nodeVersion %>"
   },
   "scripts": {
     "start": "node app",
