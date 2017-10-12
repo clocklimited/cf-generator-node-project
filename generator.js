@@ -34,17 +34,8 @@ NodeProjectGenerator.prototype.prompts =
 },
 { name: 'nodeVersion',
   message: 'What is the minimum node.js version this project should run on?',
-  default: '6.10.0',
+  default: '8.2.4',
   validate: required
-},
-{ name: 'npmVersion',
-  message: 'What is the exact npm version this project should run on?',
-  default: '3.10.10',
-  validate: required
-},
-{ name: 'client',
-  message: 'Enter the client short name (list available here: https://intranet.clock.co.uk/companies/index.php)',
-  default: 'clock'
 },
 { name: 'organization',
   message: 'What is the name of the github/npm organization?',
