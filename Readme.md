@@ -1,5 +1,7 @@
 # Generator: Node Project
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/clocklimited/cf-generator-node-project.svg)](https://greenkeeper.io/)
+
 ## Installation
 
 ```
