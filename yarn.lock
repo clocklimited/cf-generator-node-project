@@ -1955,17 +1955,6 @@ kickoff@clocklimited/kickoff#0.3.2:
     mkdirp "^0.5.1"
     tmp "0.0.33"
 
-kickoff@clocklimited/kickoff#v0.3.1:
-  version "0.3.1"
-  resolved "https://codeload.github.com/clocklimited/kickoff/tar.gz/b97370bbff80310953cd53f8a001325249addda0"
-  dependencies:
-    glob "^7.1.2"
-    inquirer "^3.3.0"
-    lodash.template "^4.4.0"
-    logga "^1.1.0"
-    mkdirp "^0.5.1"
-    tmp "0.0.33"
-
 kind-of@^3.0.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
@@ -3264,8 +3253,8 @@ xtend@^4.0.0, xtend@^4.0.1:
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
 
 yallist@^2.1.2:
   version "2.1.2"
