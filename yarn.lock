@@ -1955,17 +1955,6 @@ kickoff@clocklimited/kickoff#0.3.2:
     mkdirp "^0.5.1"
     tmp "0.0.33"
 
-kickoff@clocklimited/kickoff#v0.3.1:
-  version "0.3.1"
-  resolved "https://codeload.github.com/clocklimited/kickoff/tar.gz/b97370bbff80310953cd53f8a001325249addda0"
-  dependencies:
-    glob "^7.1.2"
-    inquirer "^3.3.0"
-    lodash.template "^4.4.0"
-    logga "^1.1.0"
-    mkdirp "^0.5.1"
-    tmp "0.0.33"
-
 kind-of@^3.0.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
@@ -2536,8 +2525,8 @@ punycode@^1.4.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
 qs@~6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.1.tgz#2bad97710a5b661c366b378b1e3a44a592ff45e6"
 
 qs@~6.5.1:
   version "6.5.1"
